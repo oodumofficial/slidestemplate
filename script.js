@@ -21,7 +21,7 @@ function leftArrow() {
     document.getElementById('video').src = slides[x];
     setTimeout(function(){
         document.getElementById('image').src = images[x];
-    }, 250);
+    }, 400);
 };
 
 function rightArrow() {
@@ -33,7 +33,7 @@ function rightArrow() {
     document.getElementById('video').src = slides[x];
     setTimeout(function(){
         document.getElementById('image').src = images[x];
-    }, 250); 
+    }, 400); 
 };
 
 
