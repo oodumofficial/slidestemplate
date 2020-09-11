@@ -19,7 +19,9 @@ function leftArrow() {
     };
     console.log(x);
     document.getElementById('video').src = slides[x];
-    document.getElementById('image').src = images[x+1];
+    setTimeout(function(){
+        document.getElementById('image').src = images[x];
+    }, 250);
 };
 
 function rightArrow() {
@@ -29,12 +31,13 @@ function rightArrow() {
     };
     console.log(x);
     document.getElementById('video').src = slides[x];
-    document.getElementById('image').src = images[x-1];
+    setTimeout(function(){
+        document.getElementById('image').src = images[x];
+    }, 250); 
 };
 
 
 function changeNum(event) {
-    document.getElementById('image').src = images[x-1];
     switch (event.keyCode) {
         case 37:
             leftArrow();
