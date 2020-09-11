@@ -34,7 +34,7 @@ function rightArrow() {
 
 
 function changeNum(event) {
-    document.getElementById('image').src = images[x];
+    document.getElementById('image').src = images[x-1];
     switch (event.keyCode) {
         case 37:
             leftArrow();
