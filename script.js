@@ -16,10 +16,12 @@ images[4] = 'img4.png';
 
 function leftArrow() {
     x--;
-    if (x < 0) {
-        x = 0
+    if (x < 1) {
+        x = 1
     };
     console.log(x);
+    document.getElementById('video').loop = false;
+    document.getElementById('video').muted = false;
     document.getElementById('video').src = slides[x];
     setTimeout(function(){
         document.getElementById('image').src = images[x];
@@ -28,10 +30,12 @@ function leftArrow() {
 
 function rightArrow() {
     x++;
-    if (x < 0) {
-        x = 0
+    if (x < 1) {
+        x = 1
     };
     console.log(x);
+    document.getElementById('video').loop = false;
+    document.getElementById('video').muted = false;
     document.getElementById('video').src = slides[x];
     setTimeout(function(){
         document.getElementById('image').src = images[x];
