@@ -42,6 +42,12 @@ function rightArrow() {
     }, 400); 
 };
 
+function switchSlide() {
+    var askSlide = prompt('What slide number?');
+    var setSlide = Number.parseInt(askSlide);
+    x = (setSlide -1);
+}
+
 
 function changeNum(event) {
     switch (event.keyCode) {
@@ -51,6 +57,10 @@ function changeNum(event) {
 
         case 39:
             rightArrow();
+        break;
+
+        case 27:
+            switchSlide();
         break;
     }
 };
